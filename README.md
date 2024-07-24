@@ -39,6 +39,28 @@ const crawlBotVerifier = new CrawlBotVerifier({
 });
 ```
 
+## Usage
+
+```js
+const CrawlBotVerifier = require("crawl-bot-verifier");
+const crawlBotVerifier = new CrawlBotVerifier({
+  domains: { bing: ["msn.com"] },
+});
+
+const IP = "";
+const searchEngines = ["google", "bing"];
+
+// verify method takes two arguments, the I.P address
+// and the search engines to match against.
+crawlBotVerifier.verify(IP, searchEngines).then((isMatch) => {
+  if (isMatch) {
+    // Do something
+  } else {
+    // Do something else
+  }
+});
+```
+
 ## Supporting other bots
 
 To support other bots simply, pass the domains for the new bot.
