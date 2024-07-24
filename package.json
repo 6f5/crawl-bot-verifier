@@ -1,6 +1,6 @@
 {
   "name": "crawl-bot-verifier",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Craw bot verifier. Veirfy search engines crawl bots.",
   "main": "dist/index.js",
   "scripts": {
