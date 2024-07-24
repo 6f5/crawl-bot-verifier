@@ -1,0 +1,34 @@
+{
+  "name": "crawl-bot-verifier",
+  "version": "1.0.0",
+  "description": "Craw bot verifier. Veirfy search engines crawl bots.",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rollup -c",
+    "test": "mocha src/test/*.js --timeout 5000"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "craw bot verifier",
+    "verify bot",
+    "google bot",
+    "bing bot",
+    "crawl bot",
+    "crawl",
+    "bot",
+    "verify"
+  ],
+  "author": "Abdulla Saeed <hi@resotredbytes.com>",
+  "repository": {
+    "url": "https://github.com/6f5/crawl-bot-verifier"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^10.7.0",
+    "rollup": "^4.19.0"
+  }
+}
