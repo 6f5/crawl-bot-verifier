@@ -1,5 +1,9 @@
 const dns = require("node:dns");
 
+/**
+ * Crawl bot verifier constructor.
+ * @param {object} opts options object
+ */
 function CrawlBotVerifier(opts = {}) {
   const { domains } = opts;
   this._domains = {
@@ -15,6 +19,12 @@ function CrawlBotVerifier(opts = {}) {
   }
 }
 
+/**
+ * Verify crawl bot by I.P address.
+ * @param {string} ip the I.P address to verify
+ * @param {array} engines the search engines to verify against
+ * @returns boolean true if verified otherwise false
+ */
 CrawlBotVerifier.prototype.verify = function verify(ip, engines) {
   if (typeof engines === 'string') {
     engines = [engines]
